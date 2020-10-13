@@ -27,8 +27,7 @@ $result = mysqli_query($db, "SELECT * FROM mahasiswa ORDER BY id_siswa ASC");
         <th>Umur</th>
         <th>Email</th>
         <th>Alamat</th>
-        <th>Username</th>
-        <th>Password</th>
+        <th>Aksi</th>
       </tr>
     </thead>
     <tbody>
@@ -43,8 +42,8 @@ $result = mysqli_query($db, "SELECT * FROM mahasiswa ORDER BY id_siswa ASC");
           <td>".$data['age']."</td>
           <td>".$data['email']."</td>
           <td>".$data['alamat']."</td>
-          <td>".$data['username']."</td>
-          <td>".$data['password']."</td>
+          <td><a href='edit.php?id=$data[id_siswa]'>Edit</a> |
+          <a href='delete.php?id=$data[id_siswa]'>Delete</a></td>
         </tr>";
       }
       ?>

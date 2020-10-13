@@ -4,11 +4,11 @@
   "description": "CRUD tabel mahasiswa",
   "main": "index.php",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass/app.scss css/app.css"
   },
   "keywords": [
-    "Bootstrap",
-    "3",
+    "Bootstrap 3",
     "PHP",
     "CSS",
     "MySQL",

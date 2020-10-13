@@ -14,16 +14,36 @@
     <form action="add.php" method="post">
       <table width="30%">
         <tr>
-          <td>Merk</td>
-          <td><input name="merk" id="merk" type="text" placeholder="Isi merek.."></td>
+          <td>Nama Siswa</td>
+          <td><input name="nama_siswa" id="nama_siswa" type="text"></td>
         </tr>
         <tr>
-          <td>Warna</td>
-          <td><input name="warna" id="warna" type="text" placeholder="Isi warna produk.."></td>
+          <td>Jenis Kelamin</td>
+          <td><input name="jk" id="jk" type="text"></td>
         </tr>
         <tr>
-          <td>Jumlah</td>
-          <td><input name="qty" id="qty" type="number"></td>
+          <td>No. HP</td>
+          <td><input name="phone_number" id="phone_number" type="number"></td>
+        </tr>
+        <tr>
+          <td>Umur</td>
+          <td><input name="age" id="age" type="number"></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td><input name="email" id="email" type="email"></td>
+        </tr>
+        <tr>
+          <td>Alamat</td>
+          <td><input name="alamat" id="alamat" type="text"></td>
+        </tr>
+        <tr>
+          <td>Username</td>
+          <td><input name="username" id="username" type="text"></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><input name="pass" id="pass" type="password"></td>
         </tr>
         <tr>
           <td></td>
@@ -36,13 +56,20 @@
 
 <?php
   if (isset($_POST['Submit'])) {
-    $merk = $_POST['merk'];
-    $warna = $_POST['warna'];
-    $qty = $_POST['qty'];
+    $nama_siswa = $_POST['nama_siswa'];
+    $jk = $_POST['jk'];
+    $phone_number = $_POST['phone_number'];
+    $age = $_POST['age'];
+    $email = $_POST['email'];
+    $alamat = $_POST['alamat'];
+    $username = $_POST['username'];
+    $pass = $_POST['pass'];
 
     include_once('koneksi.php');
 
-    $result = mysqli_query($db, "INSERT INTO sepatu(merk,warna,qty) VALUES('$merk','warna','$qty')");
-    echo "Berhasil tambah data produk! <a href='index.php'>View Product</a>";
+    $result = mysqli_query($db, "INSERT INTO mahasiswa(nama_siswa,jk,phone_number,age,email,alamat,username,pass) VALUES('$nama_siswa','$jk','$phone_number','$age','$email','$alamat','$username','$pass')");
+    echo "Berhasil tambah data mahasiswa! <a href='index.php'>Lihat Mahasiswa</a>";
+
+    header("Location:index.php");
   }
 ?>
