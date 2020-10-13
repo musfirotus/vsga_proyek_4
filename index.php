@@ -11,7 +11,8 @@ $result = mysqli_query($db, "SELECT * FROM mahasiswa ORDER BY id_siswa ASC");
   <title>VSGA 2020 | Project 3</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.css">
 </head>
 
 <body>
@@ -52,3 +53,7 @@ $result = mysqli_query($db, "SELECT * FROM mahasiswa ORDER BY id_siswa ASC");
 </body>
 
 </html>
+
+<script>
+require('bootstrap');
+</script>

@@ -6,7 +6,8 @@
     <title>VSGA 2020 | Project 3</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.css">
   </head>
   <body>
     <h2>Tambah Data Product</h2>

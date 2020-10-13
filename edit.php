@@ -41,7 +41,9 @@ while($user_data = mysqli_fetch_array($result))
 ?>
 <html>
 <head>  
-    <title>Edit User Data</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.css">
+  <title>Edit User Data</title>
 </head>
 
 <body>
