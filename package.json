@@ -1,0 +1,24 @@
+{
+  "name": "vsga_proyek_4",
+  "version": "1.0.0",
+  "description": "CRUD tabel mahasiswa",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Bootstrap",
+    "3",
+    "PHP",
+    "CSS",
+    "MySQL",
+    "SASS",
+    "SCSS"
+  ],
+  "author": "Musfirotus",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.4.1",
+    "sass": "^1.27.0"
+  }
+}
